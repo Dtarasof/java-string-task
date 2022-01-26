@@ -1,0 +1,25 @@
+public class polindrom {
+	public static void main(String...args) {
+		 			 Scanner scanner =  new  Scanner( System.in); 
+			 		 System.out.println( " Введите слово из пяти букв: " );
+			         String word = scanner.next();   
+			         String result = word.toUpperCase();
+			 if (result.length() ==  5 ) {
+				   System.out.print(" " + result.charAt(0));
+				   System.out.print(" "+ result.charAt(1));
+				   System.out.print(" " + result.charAt(2));
+				   System.out.print(" "+ result.charAt(3));
+				   System.out.print(" "+ result.charAt(4));
+			 
+			 if	( result.charAt(0) == result.charAt(4)&& result.charAt(1) == result.charAt(3)) {
+				 System.out.println( " " + "Ура! Это полиндром ");
+			 }
+			 else {
+				 System.out.println( " " + "Увы( Это Не_полиндром ");
+			 }
+			 }
+			 
+else {
+	 System.out.println( "Необходимо ввести слово из пяти букв! ");
+	 }}
+}
