@@ -1,0 +1,16 @@
+import java.util.Scanner; 
+ 
+public class Test {
+	public static void main(String[] args) {
+
+ 
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Первая строка : ");
+		String phrase1 = sc.nextLine();
+		
+		Scanner sc2 = new Scanner(System.in);
+		System.out.println("Вторая строка: ");
+		String phrase2 = sc.nextLine();
+		
+		System.out.println("Результат: " + phrase1.equals(phrase2));
+	}
