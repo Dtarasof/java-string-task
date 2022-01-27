@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class simplemathematic {  
+	public static void main(String[] args) {
+
+	double num1, num2;
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Введите первый номер:");
+    num1 = scanner.nextDouble();
+    System.out.println("Введите второй номер:");
+    num2 = scanner.nextDouble();
+
+    System.out.print("Введите математическое действие (+, -, *, /): ");
+    char operator = scanner.next().charAt(0);
+
+    scanner.close();
+    double output;            /*вывод*/
+
+    switch(operator)      /* (ВыражениеДляВыбора)*/
+    {
+        case '+':
+        	output = num1 + num2;
+            break;
+
+        case '-':
+        	output = num1 - num2;
+            break;
+
+        case '*':
+        	output = num1 * num2;
+            break;
+
+        case '/':
+        	output = num1 / num2;
+            break;
+
+       
+        default:
+            System.out.printf("Такого действия не_предусмотренно");
+            return;
+    }
+
+    System.out.println(num1+" "+operator+" "+num2+": Результат "+output);
+}
+}
